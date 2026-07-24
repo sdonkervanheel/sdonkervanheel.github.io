@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simon Donker van Heel | Econometrics PhD Candidate</title>
+<meta name="description" content="Simon Donker van Heel is a PhD candidate in econometrics at Erasmus University Rotterdam and the Tinbergen Institute. He develops filtering methods for time-varying parameter models, with applications in financial economics.">
+<link rel="canonical" href="https://sdonkervanheel.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simon Donker van Heel">
+<meta property="og:description" content="PhD candidate in econometrics at Erasmus University Rotterdam and the Tinbergen Institute. Filtering methods for time series, with applications in financial economics.">
+<meta property="og:url" content="https://sdonkervanheel.github.io/">
+<meta property="og:image" content="https://sdonkervanheel.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Simon Donker van Heel",
+  "jobTitle": "PhD Candidate in Econometrics",
+  "affiliation": [
+    {"@type": "Organization", "name": "Erasmus University Rotterdam"},
+    {"@type": "Organization", "name": "Tinbergen Institute"}
+  ],
+  "email": "mailto:donkervanheel@ese.eur.nl",
+  "url": "https://sdonkervanheel.github.io/",
+  "image": "https://sdonkervanheel.github.io/photo.jpg",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=-v55COUAAAAJ",
+    "https://tinbergen.nl/person/1875/simon-donker-van-heel",
+    "https://www.linkedin.com/in/simon-donker-van-heel-44a4b7154/",
+    "https://github.com/sdonkervanheel",
+    "https://arxiv.org/a/donkervanheel_s_1"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #fdfcfa;
+    --ink: #1d2433;
+    --muted: #5b6472;
+    --accent: #14468c;
+    --accent-ink: #0f3568;
+    --hairline: #e6e2da;
+    --card: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), #6d92c4 60%, transparent);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---- nav ---- */
+  nav {
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 26px 0 0;
+    flex-wrap: wrap; gap: 8px;
+  }
+  nav .brand {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600; font-size: 1.05rem; color: var(--ink);
+  }
+  nav .links a {
+    color: var(--muted); font-size: 0.86rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    margin-left: 22px;
+  }
+  nav .links a:hover { color: var(--accent); text-decoration: none; }
+
+  /* ---- hero ---- */
+  header.hero {
+    display: grid; grid-template-columns: 1.25fr 0.75fr;
+    gap: 56px; align-items: center;
+    padding: 72px 0 84px;
+  }
+  .kicker {
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600; font-size: clamp(2.1rem, 5vw, 3.05rem);
+    line-height: 1.12; letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .hero .affil { color: var(--muted); font-size: 1.02rem; margin-bottom: 22px; }
+  .hero p.bio { margin-bottom: 14px; max-width: 54ch; }
+  .hero .jm { font-weight: 500; }
+  .btnrow { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn {
+    display: inline-block; padding: 10px 20px; border-radius: 8px;
+    font-size: 0.92rem; font-weight: 600;
+    background: var(--accent); color: #fff;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-ink); text-decoration: none; transform: translateY(-1px); }
+  .btn.ghost {
+    background: transparent; color: var(--accent);
+    border: 1px solid #b9c6da;
+  }
+  .btn.ghost:hover { background: #f0f4fa; }
+  .idrow { margin-top: 20px; font-size: 0.9rem; color: var(--muted); }
+  .idrow a { margin-right: 4px; }
+  .idrow span.sep { color: #c8c2b8; margin: 0 6px; }
+
+  .portrait {
+    width: 100%; max-width: 330px; justify-self: end;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(29, 36, 51, 0.14);
+    display: block;
+  }
+
+  /* ---- sections ---- */
+  section { border-top: 1px solid var(--hairline); padding: 56px 0 30px; }
+  .seclabel {
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 26px;
+  }
+  h3.sub {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600; font-size: 1.12rem;
+    margin: 26px 0 14px;
+  }
+  h3.sub:first-of-type { margin-top: 0; }
+
+  .paper {
+    background: var(--card); border: 1px solid var(--hairline);
+    border-radius: 10px; padding: 18px 22px; margin-bottom: 14px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .paper:hover { border-color: #c3cfdf; box-shadow: 0 4px 16px rgba(29,36,51,0.06); }
+  .paper .title {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.06rem; font-weight: 600; line-height: 1.4;
+  }
+  .paper .title a { color: var(--ink); }
+  .paper .title a:hover { color: var(--accent); text-decoration: none; }
+  .paper .meta { color: var(--muted); font-size: 0.94rem; margin-top: 4px; }
+  .paper .plinks { margin-top: 8px; font-size: 0.88rem; font-weight: 500; }
+  .paper .plinks span.sep { color: #c8c2b8; margin: 0 7px; }
+  .paper .note { font-style: italic; color: var(--muted); font-size: 0.9rem; }
+
+  ul.teach { list-style: none; }
+  ul.teach li {
+    padding: 9px 0; border-bottom: 1px dashed var(--hairline);
+    display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  }
+  ul.teach li:last-child { border-bottom: none; }
+  ul.teach .yrs { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  .teach-inst { color: var(--muted); margin-bottom: 12px; }
+
+  .cvline { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .cvline .upd { color: var(--muted); font-size: 0.9rem; }
+
+  address { font-style: normal; color: var(--muted); margin-top: 6px; }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    padding: 26px 0 40px; margin-top: 30px;
+    color: var(--muted); font-size: 0.85rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+
+  /* gentle reveal */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { opacity: 0; transform: translateY(10px); animation: rise 0.7s ease forwards; }
+    .reveal.d1 { animation-delay: 0.08s; }
+    .reveal.d2 { animation-delay: 0.16s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  @media (max-width: 720px) {
+    header.hero { grid-template-columns: 1fr; gap: 34px; padding: 44px 0 56px; }
+    .portrait { justify-self: start; max-width: 260px; }
+    nav .links a { margin-left: 0; margin-right: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <nav>
+    <span class="brand">Simon Donker van Heel</span>
+    <span class="links">
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </span>
+  </nav>
+
+  <header class="hero">
+    <div class="reveal">
+      <div class="kicker">PhD Candidate in Econometrics</div>
+      <h1>Simon Donker van&nbsp;Heel</h1>
+      <div class="affil">Erasmus University Rotterdam &amp; Tinbergen Institute</div>
+      <p class="bio">I develop statistical methods for filtering, prediction and smoothing in
+      time-varying parameter models, with applications in financial economics. My PhD is
+      supervised by Dick van Dijk and Rutger-Jan Lange. In the fall of 2025 I visited the
+      Department of Statistics at Harvard University as a Fulbright Scholar, hosted by
+      Neil Shephard.</p>
+      <p class="bio jm">I will be on the 2026&ndash;2027 academic job market.</p>
+      <div class="btnrow">
+        <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV</a>
+        <a class="btn ghost" href="mailto:donkervanheel@ese.eur.nl">Email me</a>
+      </div>
+      <div class="idrow">
+        <a href="https://scholar.google.com/citations?user=-v55COUAAAAJ">Google Scholar</a><span class="sep">&middot;</span><a href="https://tinbergen.nl/person/1875/simon-donker-van-heel">Tinbergen Institute</a><span class="sep">&middot;</span><a href="https://www.linkedin.com/in/simon-donker-van-heel-44a4b7154/">LinkedIn</a><span class="sep">&middot;</span><a href="https://github.com/sdonkervanheel">GitHub</a>
+      </div>
+    </div>
+    <img class="portrait reveal d1" src="photo.jpg" alt="Portrait of Simon Donker van Heel" width="330" height="413">
+  </header>
+
+  <section id="research">
+    <div class="seclabel">Research</div>
+
+    <h3 class="sub">Job market paper</h3>
+    <div class="paper">
+      <div class="title">AdaDMQ: An adaptive filter for multiple time-varying quantiles</div>
+      <div class="meta">Single-authored</div>
+      <div class="plinks"><span class="note">Draft available September 2026.</span></div>
+    </div>
+
+    <h3 class="sub">Working papers</h3>
+    <div class="paper">
+      <div class="title">Filtering without recursion and some of its uses in financial economics</div>
+      <div class="meta">2026, with Neil Shephard</div>
+      <div class="plinks"><span class="note">arXiv preprint expected August 2026.</span></div>
+    </div>
+    <div class="paper">
+      <div class="title"><a href="https://arxiv.org/abs/2512.16745">Exponentially weighted estimands and the exponential family: Filtering, prediction and smoothing</a></div>
+      <div class="meta">2025, with Neil Shephard</div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2512.16745">arXiv</a><span class="sep">&middot;</span><a href="https://papers.tinbergen.nl/25074.pdf">Tinbergen Institute Discussion Paper</a>
+      </div>
+    </div>
+    <div class="paper">
+      <div class="title"><a href="https://arxiv.org/abs/2502.05021">Gradient-based filtering under misspecification: Stability and error bounds</a></div>
+      <div class="meta">2025, with Rutger-Jan Lange, Bram van Os and Dick van Dijk</div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2502.05021">arXiv</a><span class="sep">&middot;</span><a href="https://papers.tinbergen.nl/25006.pdf">Tinbergen Institute Discussion Paper</a><span class="sep">&middot;</span><a href="https://ssrn.com/abstract=5127937">SSRN</a>
+      </div>
+    </div>
+
+    <h3 class="sub">Work in progress</h3>
+    <div class="paper">
+      <div class="title">Implicit score-driven high-dimensional precision matrices</div>
+      <div class="meta">with Rutger-Jan Lange, Bram van Os and Dick van Dijk</div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="seclabel">Teaching</div>
+    <div class="teach-inst">Erasmus University Rotterdam (Erasmus School of Economics)</div>
+    <ul class="teach">
+      <li><span>Seminar Case Studies in Financial and Applied Econometrics (MSc)</span><span class="yrs">2025&ndash;2026</span></li>
+      <li><span>Quantitative Risk Management (MSc)</span><span class="yrs">2023&ndash;present</span></li>
+      <li><span>Financial Econometrics Case Study (BSc)</span><span class="yrs">2023&ndash;2025</span></li>
+      <li><span>Academic Skills (BSc)</span><span class="yrs">2023&ndash;2025</span></li>
+      <li><span>Thesis supervision (BSc and MSc)</span><span class="yrs">2023&ndash;present</span></li>
+    </ul>
+  </section>
+
+  <section id="cv">
+    <div class="seclabel">Curriculum Vitae</div>
+    <div class="cvline">
+      <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV (PDF)</a>
+      <span class="upd">Last updated July 2026</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="seclabel">Contact</div>
+    <p><a href="mailto:donkervanheel@ese.eur.nl">donkervanheel@ese.eur.nl</a></p>
+    <address>
+      Econometric Institute, Erasmus University Rotterdam<br>
+      Burgemeester Oudlaan 50, 3062 PA Rotterdam, the Netherlands
+    </address>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Simon Donker van Heel</span>
+    <span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top &uarr;</a></span>
+  </footer>
+
+</div>
+
+</body>
+</html>
