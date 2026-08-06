@@ -107,7 +107,13 @@
     line-height: 1.12; letter-spacing: -0.01em;
     margin-bottom: 14px;
   }
-  .hero .affil { color: var(--muted); font-size: 1.02rem; margin-bottom: 22px; }
+  .hero .affil { color: var(--muted); font-size: 1.02rem; margin-bottom: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .tags span {
+    font-size: 0.78rem; font-weight: 500; color: var(--muted);
+    border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 3px 11px; background: var(--card);
+  }
   .hero p.bio { margin-bottom: 14px; max-width: 54ch; }
   .hero .jm { font-weight: 500; }
   .btnrow { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -165,6 +171,14 @@
   .paper .plinks span.sep { color: #c8c2b8; margin: 0 7px; }
   .paper .note { font-style: italic; color: var(--muted); font-size: 0.9rem; }
 
+  ul.newslist { list-style: none; }
+  ul.newslist li { display: flex; gap: 18px; padding: 7px 0; }
+  ul.newslist .date {
+    color: var(--accent); font-size: 0.82rem; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    flex: 0 0 74px; padding-top: 2px;
+  }
+
   ul.teach { list-style: none; }
   ul.teach li {
     padding: 9px 0; border-bottom: 1px dashed var(--hairline);
@@ -220,6 +234,9 @@
       <div class="kicker">PhD Candidate in Econometrics</div>
       <h1>Simon Donker van&nbsp;Heel</h1>
       <div class="affil">Erasmus University Rotterdam &amp; Tinbergen Institute</div>
+      <div class="tags">
+        <span>Time Series</span><span>Filtering</span><span>Financial Econometrics</span><span>Statistical Methodology</span>
+      </div>
       <p class="bio">I develop filtering, prediction and smoothing methods for time series,
       with applications in financial economics. My PhD is supervised by Dick van Dijk and
       Rutger-Jan Lange. In the fall of 2025 I visited the Department of Statistics at
@@ -236,12 +253,21 @@
     <img class="portrait reveal d1" src="photo.jpg" alt="Portrait of Simon Donker van Heel" width="330" height="413">
   </header>
 
+  <section id="news">
+    <div class="seclabel">News</div>
+    <ul class="newslist">
+      <li><span class="date">Sep 2026</span><span>Upcoming: job market paper draft, and a talk at the Econometric Institute Seminar, Rotterdam.</span></li>
+      <li><span class="date">Jun 2026</span><span>Presented at the Symposium on Econometric Theory and Applications (SETA), University of Tokyo.</span></li>
+      <li><span class="date">May 2026</span><span>Runner-up for the Best Poster Award at the Netherlands Econometrics Study Group, Tilburg.</span></li>
+    </ul>
+  </section>
+
   <section id="research">
     <div class="seclabel">Research</div>
 
     <h3 class="sub">Job market paper</h3>
     <div class="paper">
-      <div class="title">AdaDMQ: An adaptive filter for multiple time-varying quantiles</div>
+      <div class="title">An implicit dynamic multiple quantile filter</div>
       <div class="meta">Single-authored</div>
       <div class="plinks"><span class="note">Draft expected September 2026.</span></div>
     </div>
@@ -290,7 +316,7 @@
     <div class="seclabel">Curriculum Vitae</div>
     <div class="cvline">
       <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV (PDF)</a>
-      <span class="upd">Last updated July 2026</span>
+      <span class="upd">Last updated August 2026</span>
     </div>
   </section>
 
