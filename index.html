@@ -191,6 +191,14 @@
   .cvline { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .cvline .upd { color: var(--muted); font-size: 0.9rem; }
 
+  ul.refs { list-style: none; }
+  ul.refs li {
+    padding: 11px 0; border-bottom: 1px dashed var(--hairline);
+    display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  }
+  ul.refs li:last-child { border-bottom: none; }
+  ul.refs .aff { color: var(--muted); font-size: 0.92rem; }
+
   address { font-style: normal; color: var(--muted); margin-top: 6px; }
 
   footer {
@@ -261,7 +269,10 @@
       <div class="title">Filtering without recursion and some of its uses in financial economics</div>
       <div class="meta">2026, with Neil Shephard</div>
       <div class="plinks">
-        <a href="/filtering-web-appendix/">Web Appendix</a><span class="sep">&middot;</span><span class="note">arXiv preprint expected September 2026.</span>
+        <!-- Tinbergen Institute Discussion Paper: when online, insert
+        <a href="https://papers.tinbergen.nl/NNNNN.pdf">Tinbergen Institute Discussion Paper</a><span class="sep">&middot;</span>
+        directly after the arXiv link, matching the two entries below. -->
+        <a href="https://arxiv.org/abs/2609.07207">arXiv</a><span class="sep">&middot;</span><a href="https://ssrn.com/abstract=7428639">SSRN</a><span class="sep">&middot;</span><a href="/filtering-web-appendix/">Web Appendix</a>
       </div>
     </div>
 
@@ -269,7 +280,7 @@
     <div class="paper">
       <div class="title">An implicit dynamic multiple quantile filter</div>
       <div class="meta">Single-authored</div>
-      <div class="plinks"><span class="note">arXiv preprint expected later in 2026.</span></div>
+      <div class="plinks"><span class="note">Draft available on request.</span></div>
     </div>
     <div class="paper">
       <div class="title"><a href="https://arxiv.org/abs/2512.16745">Exponentially weighted estimands and the exponential family: Filtering, prediction and smoothing</a></div>
@@ -297,6 +308,7 @@
     <div class="seclabel">News</div>
     <ul class="newslist">
       <li><span class="date">Oct 2026</span><span>Presenting the job market paper at the Brown Bag Seminar of the Department of Econometrics and Data Science, Vrije Universiteit Amsterdam, 1 October, 12:45.</span></li>
+      <li><span class="date">Sep 2026</span><span>The job market paper is now on <a href="https://arxiv.org/abs/2609.07207">arXiv</a>.</span></li>
       <li><span class="date">Sep 2026</span><span>Presenting the job market paper at the Econometric Institute Seminar, Erasmus University Rotterdam, 15 September, 11:30.</span></li>
       <li><span class="date">Jun 2026</span><span>Presented at the Symposium on Econometric Theory and Applications (SETA), University of Tokyo.</span></li>
       <li><span class="date">May 2026</span><span>Runner-up for the Best Poster Award at the Netherlands Econometrics Study Group, Tilburg.</span></li>
@@ -319,8 +331,18 @@
     <div class="seclabel">Curriculum Vitae</div>
     <div class="cvline">
       <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV (PDF)</a>
-      <span class="upd">Last updated August 2026</span>
+      <span class="upd">Last updated September 2026</span>
     </div>
+  </section>
+
+  <section id="references">
+    <div class="seclabel">References</div>
+    <ul class="refs">
+      <li><span>Prof. Dick van Dijk<br><span class="aff">Erasmus University Rotterdam</span></span><a href="mailto:djvandijk@ese.eur.nl">djvandijk@ese.eur.nl</a></li>
+      <li><span>Dr. Rutger-Jan Lange<br><span class="aff">Erasmus University Rotterdam</span></span><a href="mailto:lange@ese.eur.nl">lange@ese.eur.nl</a></li>
+      <li><span>Prof. Neil Shephard<br><span class="aff">Harvard University</span></span><a href="mailto:shephard@fas.harvard.edu">shephard@fas.harvard.edu</a></li>
+      <li><span>Prof. Siem Jan Koopman<br><span class="aff">Vrije Universiteit Amsterdam</span></span><a href="mailto:s.j.koopman@vu.nl">s.j.koopman@vu.nl</a></li>
+    </ul>
   </section>
 
   <section id="contact">
