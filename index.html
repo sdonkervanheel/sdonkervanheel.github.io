@@ -114,6 +114,7 @@
     padding: 3px 11px; background: var(--card);
   }
   .hero p.bio { margin-bottom: 14px; max-width: 54ch; }
+  .hero .jm { font-weight: 500; }
   .btnrow { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .btn {
     display: inline-block; padding: 10px 20px; border-radius: 8px;
@@ -179,8 +180,13 @@
 
   ul.teach { list-style: none; }
   ul.teach li {
-    padding: 9px 0; border-bottom: 1px dashed var(--hairline);
-    display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+    padding: 11px 0; border-bottom: 1px dashed var(--hairline);
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 18px; flex-wrap: wrap;
+  }
+  ul.teach li > span:first-child { flex: 1 1 320px; }
+  ul.teach .tnote {
+    display: block; color: var(--muted); font-size: 0.92rem; margin-top: 2px;
   }
   ul.teach li:last-child { border-bottom: none; }
   ul.teach .yrs { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
@@ -247,6 +253,7 @@
       with applications in financial economics. My PhD is supervised by Dick van Dijk and
       Rutger-Jan Lange. In the fall of 2025 I visited the Department of Statistics at
       Harvard University as a Fulbright Scholar, hosted by Neil Shephard.</p>
+      <p class="bio jm">On the 2026&ndash;2027 academic job market.</p>
       <div class="btnrow">
         <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV</a>
         <a class="btn ghost" href="mailto:donkervanheel@ese.eur.nl">Email me</a>
@@ -302,7 +309,7 @@
   <section id="news">
     <div class="seclabel">News</div>
     <ul class="newslist">
-      <li><span class="date">Oct 2026</span><span>Presenting the job market paper at the Tinbergen Institute PhD Seminar, Amsterdam, 30 October, 16:50.</span></li>
+      <li><span class="date">Oct 2026</span><span>Presented the job market paper at the Tinbergen Institute PhD Seminar, Amsterdam.</span></li>
       <li><span class="date">Oct 2026</span><span>Presented the job market paper at the Brown Bag Seminar of the Department of Econometrics and Data Science, Vrije Universiteit Amsterdam.</span></li>
       <li><span class="date">Sep 2026</span><span>The job market paper is now on <a href="https://arxiv.org/abs/2609.07207">arXiv</a> and a <a href="https://papers.tinbergen.nl/26068.pdf">Tinbergen Institute Discussion Paper</a>.</span></li>
       <li><span class="date">Sep 2026</span><span>Presented the job market paper at the Econometric Institute Seminar, Erasmus University Rotterdam.</span></li>
@@ -316,11 +323,11 @@
     <div class="seclabel">Teaching</div>
     <div class="teach-inst">Erasmus University Rotterdam (Erasmus School of Economics)</div>
     <ul class="teach">
-      <li><span>Seminar Case Studies in Financial and Applied Econometrics (MSc)</span><span class="yrs">2025&ndash;2026</span></li>
-      <li><span>Quantitative Risk Management (MSc)</span><span class="yrs">2023&ndash;present</span></li>
-      <li><span>Financial Econometrics Case Study (BSc)</span><span class="yrs">2023&ndash;2025</span></li>
-      <li><span>Academic Skills (BSc)</span><span class="yrs">2023&ndash;2025</span></li>
-      <li><span>Thesis supervision (BSc and MSc)</span><span class="yrs">2023&ndash;present</span></li>
+      <li><span>Seminar Case Studies in Financial and Applied Econometrics (MSc)<span class="tnote">10-week research projects for companies, in teams of 4. Supervised 4 teams on GDP nowcasting for Ortec Finance in 2026, with weekly meetings, feedback on drafts and grading.</span></span><span class="yrs">2025&ndash;present</span></li>
+      <li><span>Quantitative Risk Management (MSc)<span class="tnote">Graded the written exam and the resit.</span></span><span class="yrs">2023&ndash;present</span></li>
+      <li><span>Financial Econometrics Case Study (BSc)<span class="tnote">2nd-year undergraduate course on forecasting stock market volatility. Held meetings with the teams and graded the reports.</span></span><span class="yrs">2023&ndash;2025</span></li>
+      <li><span>Academic Skills (BSc)<span class="tnote">Academic writing and presenting for 2nd-year econometrics students. Taught tutorials, gave feedback on reports and graded the presentations.</span></span><span class="yrs">2023&ndash;2025</span></li>
+      <li><span>Thesis supervision (BSc and MSc)<span class="tnote">5 BSc theses and 1 MSc thesis per year. Second assessor for 3 MSc theses per year.</span></span><span class="yrs">2023&ndash;present</span></li>
     </ul>
   </section>
 
@@ -328,7 +335,7 @@
     <div class="seclabel">Curriculum Vitae</div>
     <div class="cvline">
       <a class="btn" href="https://raw.githubusercontent.com/sdonkervanheel/academic-cv/main/Simon_Donker_van_Heel_CV.pdf">Download CV (PDF)</a>
-      <span class="upd">Last updated October 2026</span>
+      <span class="upd">Last updated November 2026</span>
     </div>
   </section>
 
